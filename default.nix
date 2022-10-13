@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   cpt-fetcher = pkgs.callPackage ./pkgs/cpt-fetcher { };
+  cpt = pkgs.callPackage ./pkgs/cpt { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
