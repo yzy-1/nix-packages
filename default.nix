@@ -16,6 +16,7 @@
 
   cpt-fetcher = pkgs.callPackage ./pkgs/cpt-fetcher { };
   cpt = pkgs.callPackage ./pkgs/cpt { };
+  rtw89-zen = pkgs.callPackage ./pkgs/rtw89-zen { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
