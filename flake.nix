@@ -16,6 +16,7 @@
     {
       packages = forAllSystems (system: import ./default.nix {
         pkgs = import nixpkgs { inherit system; };
+        inherit system;
       });
     };
 }
