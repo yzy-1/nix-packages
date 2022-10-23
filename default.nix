@@ -17,6 +17,7 @@
   cpt-fetcher = pkgs.callPackage ./pkgs/cpt-fetcher { };
   cpt = pkgs.callPackage ./pkgs/cpt { };
   rtw89-zen = pkgs.callPackage ./pkgs/rtw89-zen { };
+  v2raya = pkgs.callPackage ./pkgs/v2raya { v2ray = (import (builtins.getFlake "github:NixOS/nixpkgs/908245b5532e4fcfedc8e6f15abc330ad5942506") {}).v2ray; };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
