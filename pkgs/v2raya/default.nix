@@ -1,10 +1,10 @@
 { lib
+, system
 , fetchFromGitHub
 , mkYarnPackage
 , fetchYarnDeps
 , buildGoModule
 , makeWrapper
-, v2ray
 , v2ray-geoip
 , v2ray-domain-list-community
 , symlinkJoin
@@ -37,6 +37,7 @@ let
     dontInstall = true;
     dontFixup = true;
   };
+  v2ray = (import (builtins.getFlake "github:NixOS/nixpkgs/908245b5532e4fcfedc8e6f15abc330ad5942506") { inherit system; }).v2ray;
 in
 buildGoModule {
   inherit pname version;

@@ -18,5 +18,6 @@
         pkgs = import nixpkgs { inherit system; };
         inherit system;
       });
+      nixosModules = import ./modules;
     };
 }
